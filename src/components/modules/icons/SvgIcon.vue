@@ -5,11 +5,6 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue';
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'SvgIcon',
-});
 
 // set props
 
