@@ -1,8 +1,7 @@
 {
   "name": "vue3-vite-ts",
-  "description": "A Vue3 / Vite / TS starter template",
   "version": "0.0.0",
-  "author": "yuking11",
+  "author": "tuan.tc",
   "license": "MIT",
   "engines": {
     "node": "16.8.0"
