@@ -23,41 +23,41 @@ import {
   // Ref,
   // ComputedRef,
   // PropType,
-} from 'vue'
-import { useCounterStore } from '~/stores/counter'
-import { useHead } from '@vueuse/head'
-import { usePageMeta } from '~/composables/usePageMeta'
+} from 'vue';
+import { useCounterStore } from '~/stores/counter';
+import { useHead } from '@vueuse/head';
+import { usePageMeta } from '~/composables/usePageMeta';
 
 // set meta
 
-const title = import.meta.env.VITE_APP_TITLE as string
-const description = 'this is vite/vue3/typescript template.'
+const title = import.meta.env.VITE_APP_TITLE as string;
+const description = 'this is vite/vue3/typescript template.';
 
-const siteMeta = usePageMeta(title, description, true)
+const siteMeta = usePageMeta(title, description, true);
 
-useHead(siteMeta)
+useHead(siteMeta);
 
 // set data
 
-const counterStore = useCounterStore()
+const counterStore = useCounterStore();
 
-const count = computed(() => counterStore.count)
+const count = computed(() => counterStore.count);
 
 // methods
 
 const onIncrement = () => {
-  counterStore.increment()
-}
+  counterStore.increment();
+};
 
 const onDecrement = () => {
-  counterStore.decrement()
-}
+  counterStore.decrement();
+};
 </script>
 
 <template>
   <div class="page-index">
     store count: {{ count }}<br />
-    <button type="button" @click="onIncrement">increment</button>
+    <button type="button" @click="onIncrement">increment1</button>
     <button type="button" @click="onDecrement">decrement</button>
   </div>
 </template>
